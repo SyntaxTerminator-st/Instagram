@@ -19,49 +19,52 @@ https://yourdomain.com/session
 
 */
 
-const { igApi ,getCookie } = require("insta-fetcher");
+const { igApi, getCookie } = require("insta-fetcher");
 // This Code Use insta-fetcher I respect The owner
 
 let ig = new igApi(cookiee);
 
-app.get("/api", async(req, res) => {
+app.get("/api", async (req, res) => {
   const url = req.query.url
-  if(url == '' || url == null){
+  if (url == '' || url == null) {
     return res.status(400).send({
       success: false,
       message: "Query Can't Be Empty!",
       creator: "ts"
     });
   }
-    ig.fetchPost(url).then((data) => {
-      console.log("Response Data");
-  console.log(data);
-  res.status(200).json({data})
-});
+  ig.fetchPost(url).then((response) => {
+    //console.log("Response Data");
+    res.status(200).json({ 
+      post_type: response["postType"], 
+      url: response["links"][0]["url"], 
+      type: response["links"][0]["type"] 
+    })
+  });
 
 })
-app.get("/session", async(req, res) => {
-    // this rout for get session id Make In Private for your Account Safety Chnage Rout Adresssss
-(async () => {
-  try {
-    const cookie = await getCookie(username, password);
-    res.status(200).json({cookie})
-  } catch (error) {
-    res.status(400).json({error})
-  }
-})();
+app.get("/session", async (req, res) => {
+  // this rout for get session id Make In Private for your Account Safety Chnage Rout Adresssss
+  (async () => {
+    try {
+      const cookie = await getCookie(username, password);
+      res.status(200).json({ cookie })
+    } catch (error) {
+      res.status(400).json({ error })
+    }
+  })();
 })
 
 app.get("/", (req, res) => {
-    res.setHeader("Cache-Control", "public,max-age=0");
-    res.status(200).json({
+  res.setHeader("Cache-Control", "public,max-age=0");
+  res.status(200).json({
 
-        telegram: 'https://telegram.me/'
-    })
+    telegram: 'https://telegram.me/'
+  })
 })
 
 
-app.listen(port, function(){
-    console.log("Your App Running on", port);
-/* This File Created By TechnoStone.xyz */
+app.listen(port, function () {
+  console.log("Your App Running on", port);
+  /* This File Created By TechnoStone.xyz */
 });
