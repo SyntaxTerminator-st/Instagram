@@ -41,6 +41,7 @@ app.get("/api", async(req, res) => {
     });
   }
     ig.fetchPost(url).then((data) => {
+      console.log("Response Data");
   console.log(data);
   res.status(200).json({results})
 });
