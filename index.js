@@ -24,13 +24,6 @@ const { igApi ,getCookie } = require("insta-fetcher");
 
 let ig = new igApi(cookiee);
 
-
-//Added
-let results = {
-    url: data.links[0].url,
-    type: data.links[0].type
-}
-
 app.get("/api", async(req, res) => {
   const url = req.query.url
   if(url == '' || url == null){
