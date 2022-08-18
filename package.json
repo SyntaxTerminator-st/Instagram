@@ -2,10 +2,10 @@
     "name": "insta-downloader",
     "version": "1.0.0",
     "description": "instagram downloader",
-    "main": "index.js",
+    "main": "index1.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js"
+        "start": "node index1.js"
     },
     "keywords": [
         "rest",
