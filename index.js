@@ -41,8 +41,8 @@ app.get("/api", async(req, res) => {
 
 //Added
 let results = {
-    url: data.links[0].url,
-    type: data.links[0].type
+    "url": data.links[0].url,
+    "type": data.links[0].type
 }
 
 
