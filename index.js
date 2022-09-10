@@ -11,7 +11,7 @@ process.setMaxListeners(Infinity);
 const username = ''; // your temp instagram username for session cookie
 const password = ''; // your password for session coookie
 
-const cookiee = 'csrftoken=VffVEEgP9kjbi6BS8WZc2u3fcwswTBdT; rur=VLL; ds_user_id=54666293544; sessionid=54666293544%3AuRbPn5Cl2mMXrL%3A7%3AAYdGvDoWoyfTQg_-7Zx54D7F6FBhNsAH6nbCHqgxSA';
+const cookiee = 'csrftoken=RlqJuUK11DPwjgn46Qigjl2Jc3H3ftxO; rur=VLL; ds_user_id=54666293544; sessionid=54666293544%3AJ3J4yOGRDS5cPn%3A29%3AAYfvnEE493yzdUAkrOceVJDS9xtG2xS7F-tpd6aY0g';
 /* How To Get Cookie 
 Deploy Your App On Server The Visit Bellow Link
 
