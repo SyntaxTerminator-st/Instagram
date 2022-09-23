@@ -8,7 +8,7 @@ http.globalAgent.maxSockets = Infinity;
 https.globalAgent.maxSockets = Infinity;
 process.setMaxListeners(Infinity);
 
-const username = 'hypertext099'; // your temp instagram username for session cookie
+const username = 'hyperboolean76981'; // your temp instagram username for session cookie
 const password = '#temp#temp'; // your password for session coookie
 
 const cookiee = 'csrftoken=SWQQHchtVZlCG7XqxRLC4jaTb87NnFUq; rur=\"VLL\\05455142279910\\0541695491833:01f7186936f41053cf1d2161892cb7922becac00a32effd726eeaf23a1fd439825e12e72\"; ds_user_id=55142279910; sessionid=55142279910%3A80LlcAMKpPkrWP%3A19%3AAYfoE_SWrtBSlz8sTgCLLrIx9bzcoaEY5YFo7XtegA';
